@@ -18,7 +18,7 @@ interface IERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
-library SafeMath {
+library Florida {
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         return a + b;
     }
@@ -292,7 +292,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
 contract FLORIDA is Context, IERC20 { 
-    using SafeMath for uint256;
+    using Florida for uint256;
     using Address for address;
     address private _owner;
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
