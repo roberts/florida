@@ -291,7 +291,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         uint deadline
     ) external;
 }
-contract EBT is Context, IERC20 { 
+contract FLORIDA is Context, IERC20 { 
     using SafeMath for uint256;
     using Address for address;
     address private _owner;
